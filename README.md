@@ -1,93 +1,102 @@
-# Movie Ticket Booking System (Java)
-  
-This project simulates a real-world movie ticket booking process where users can view movies, check seat availability, and book tickets.
+# 🎬 Movie Ticket Booking System
+
+A clean, object-oriented Java command-line application that simulates a real-world movie ticket booking process. The system allows users to browse movies, check seat availability, book tickets, and manage bookings while demonstrating core Java programming concepts and object-oriented design.
+
+Developed and maintained by **[@atharva1145](https://github.com/atharva1145)**.
 
 ---
 
-# Features
+## 🚀 Features
 
-- View movie details
-- Display available seats
-- Book movie tickets
-- Booking confirmation
-- Seat availability management
-- Email validation
-- Menu-driven interface
-- Admin and Customer roles
-- OOP concepts implementation
-
----
-
-# Technologies Used
-
-- Java
-- Object-Oriented Programming (OOP)
-- Collections Framework
-- Scanner Class
-- Console-based UI
+- **Movie Management**: Display available movies and show details.
+- **Seat Availability**: View available seats before booking.
+- **Ticket Booking**: Reserve seats through an interactive menu-driven interface.
+- **Booking Confirmation**: Generate booking confirmation after successful reservation.
+- **Role-Based Access**: Separate Admin and Customer functionalities.
+- **Input Validation**: Email validation and seat availability checks.
+- **Duplicate Booking Prevention**: Prevent multiple bookings for the same seat.
+- **Interactive CLI Interface**: Easy-to-use console-based application.
 
 ---
 
-# Project Structure
+## 🛠️ Technology Stack
 
-```bash
-Movie_Ticket_Booking_System.java
+- **Language:** Java (JDK 8 or higher)
+- **Architecture:** Object-Oriented Programming (OOP)
+- **Concepts:** Encapsulation, Inheritance, Polymorphism, Abstraction
+- **Libraries:** Java Collections Framework, Scanner Class
+
+---
+
+## 📁 Project Structure
+
+```
+Movie Ticket Booking System/
+├── Movie_Ticket_Booking_System.java
+├── User.java
+├── Admin.java
+├── Customer.java
+├── Movie.java
+├── Theater.java
+├── Seat.java
+├── Show.java
+├── Booking.java
+├── BookingService.java
+├── README.md
+└── .gitignore
 ```
 
-The project contains the following classes:
+---
 
-| Class Name | Description |
-|------------|-------------|
-| User | Base class for all users |
-| Admin | Handles admin operations |
-| Customer | Handles customer actions |
-| Movie | Stores movie details |
-| Theater | Manages theater and movies |
-| Seat | Manages seat booking |
-| Show | Handles show and seat availability |
-| Booking | Stores booking information |
-| BookingService | Handles booking logic |
-| Movie_Ticket_Booking_System | Main class |
+## 🏗️ System Components
+
+| Class | Responsibility |
+|-------|----------------|
+| `User` | Base class for all users |
+| `Admin` | Handles administrative operations |
+| `Customer` | Manages customer activities |
+| `Movie` | Stores movie information |
+| `Theater` | Manages theater details |
+| `Seat` | Handles seat allocation |
+| `Show` | Maintains show schedules and seat availability |
+| `Booking` | Stores booking details |
+| `BookingService` | Implements booking operations |
+| `Movie_Ticket_Booking_System` | Application entry point |
 
 ---
 
-# OOP Concepts Used
+## 🎯 Object-Oriented Concepts
 
-## Encapsulation
-- Private variables with getters and setters
+### Encapsulation
+- Private data members with getters and setters.
 
-## Inheritance
-- `Admin` and `Customer` inherit from `User`
+### Inheritance
+- `Admin` and `Customer` extend the `User` class.
 
-## Polymorphism
-- Method overriding using `performRole()`
+### Polymorphism
+- Method overriding for role-specific behavior.
 
-## Abstraction
-- Booking operations separated using service class
+### Abstraction
+- Booking logic separated into dedicated service classes.
 
 ---
 
-# How to Run
+## ⚙️ Prerequisites
 
-## Step 1: Clone Repository
+- Java Development Kit (JDK 8 or higher)
+- Command Prompt, PowerShell, or Terminal
 
-```bash
-git clone https://github.com/atharva1145/Java-Projects-Collections.git
-```
+---
 
-## Step 2: Navigate to Project Folder
+## ▶️ Building & Running
 
-```bash
-cd Java-Projects-Collections
-```
-
-## Step 3: Compile the Program
+### Compile
 
 ```bash
-javac Movie_Ticket_Booking_System.java
+javac *.java
 ```
 
-## Step 4: Run the Program
+### Execute
 
 ```bash
 java Movie_Ticket_Booking_System
@@ -95,23 +104,26 @@ java Movie_Ticket_Booking_System
 
 ---
 
-# Sample Menu
+## 💡 Example Usage
 
-```bash
+```text
 ===== MOVIE TICKET BOOKING SYSTEM =====
 
-1. View Movie
+1. View Movies
 2. Book Ticket
 3. Exit
-```
 
----
+Enter your choice: 1
 
-# Sample Booking Flow
+Available Movies:
+1. Avengers
+2. Interstellar
+3. Inception
 
-```bash
-Enter your name: atharva1145
-Enter email: atharva1145@gmail.com
+Enter your choice: 2
+
+Enter your name: Atharva
+Enter your email: atharva1145@gmail.com
 
 Available Seats:
 A1
@@ -122,51 +134,41 @@ A5
 
 Enter seat number: A1
 
-Seat booked successfully
-Booking Confirmed!
+Seat booked successfully!
+Booking Confirmed.
 ```
 
 ---
 
-# Validations Implemented
+## ✅ Validations
 
-- Email validation
-- Seat availability checking
+- Email format validation
+- Seat availability verification
 - Duplicate booking prevention
-- Invalid seat handling
-- Invalid duration validation
+- Invalid seat selection handling
+- Invalid input validation
 
 ---
 
-# Future Enhancements
+## 🚀 Future Enhancements
 
-- Database integration
-- GUI implementation using Java Swing or JavaFX
-- Multiple movies and shows
+- Database integration (MySQL)
+- Graphical User Interface (Java Swing / JavaFX)
+- Multiple theaters and movie shows
 - Payment gateway simulation
-- Ticket cancellation feature
-- User authentication system
+- Ticket cancellation and refund
+- User authentication and authorization
 
 ---
 
-# Author
+## 👤 Author
 
-atharva1145
+**Atharva**
 
-GitHub: https://github.com/atharva1145
-
-Certified by: atharva1145
+- GitHub: **[@atharva1145](https://github.com/atharva1145)**
 
 ---
 
-# Contribution
+## 📄 License
 
-Contributions, issues, and feature requests are welcome.
-
-Feel free to fork the repository and submit a pull request.
-
----
-
-# License
-
-This project is developed for educational and learning purposes.
+This project is intended for educational and learning purposes.
